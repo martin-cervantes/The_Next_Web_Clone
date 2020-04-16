@@ -58,9 +58,85 @@ table {
 
 
 body {
-  background-color: red;
+  background-color:#fff;
 }
 
 .wrapper {
+  padding: 0;
   width: 100%;
 }
+
+.logo {
+  top: 0;
+  left: 0;
+  width: 110px;
+  position: fixed;
+  height: 50px;
+}
+
+.logo {
+  width:150px;
+  position: absolute;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 56px;
+  background-color: red;
+}
+
+.top-header {
+  padding-left: 90px;
+}
+
+.top-header a{
+  color:#888;
+  font-size: 1em;
+}
+
+.our-tech-festival_ {
+  padding-left: 140px;
+  height: 20px;
+  line-height: 20px;
+  font-size: .8em;
+  background-color:yellow;
+}
+
+.front_{
+  height: 440px;
+}
+
+.front_ .video-large_ {
+  float: left;
+  width: 65%;
+  height: 440px;
+  background-color: darkorchid;
+}
+
+.front_ .video-thumb_ {
+  float: right;
+  width: 35%;
+  height: 440px;
+  background-color: darkturquoise;
+  padding: 2px;;
+}
+
+.video-thumb_ div {
+ height:219px;
+background-color: deeppink;
+}
+
+.latest-news_ .row div {
+  min-height: 200px;
+}
+
+.latest-news_ .col-sm div {
+   height: 240px;
+   background-image: url(images/images-1.jpg);
+}
+
+
+ 
