@@ -60,3 +60,7 @@ table {
 body {
   background-color: red;
 }
+
+.wrapper {
+  width: 100%;
+}
