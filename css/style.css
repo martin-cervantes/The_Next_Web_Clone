@@ -142,11 +142,98 @@ table {
   src: url(../fonts/ARSMaquette.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Avalon';
+  src: url(../fonts/Avalon.ttf) format('truetype');
+}
+
 /* YOUR CODE HERE */
 
 
 body {
   background-color: red;
+}
+
+/* deals */
+
+.deals_section {
+  margin: 5rem 0;
+}
+
+.deals_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 1.3rem;
+}
+
+.deals_header .anchor {
+  color: #f42;
+  display: flex;
+  flex: 1;
+  font-family: 'Avalon', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.deals_header .anchor:hover {
+  color: black;
+}
+
+.deals_header .right {
+  color: #f42;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  font-size: 1rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.deals_header .right:hover {
+  color: black;
+}
+
+.deals {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  margin: 0.8rem 0.5rem;
+}
+
+.deal {
+  margin: 0.8rem;
+}
+
+.deal .picture {
+  width: 100%;
+}
+
+.deal .description {
+  color: black;
+  display: block;
+  font-family: 'Avalon', sans-serif;
+  font-size: 0.91rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+  padding: 0.5rem 0.1rem 0.3rem;
+  text-decoration: none;
+}
+
+.deal .description:hover {
+  color: #f42;
+}
+
+.deal .old_price {
+  color: #aaa;
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
+
+.deal .new_price {
+  color: #555;
+  font-size: 0.9rem;
 }
 
 /* footer */
@@ -213,7 +300,39 @@ body {
 
 /* queries */
 
+@media (max-width: 1000px) {
+  .deals {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+}
+
 @media (max-width: 750px) {
+  .deals {
+    grid-template-columns: auto;
+  }
+
+  .deal {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0.8rem;
+  }
+
+  .deal .picture {
+    width: 5rem;
+  }
+
+  .deal div {
+    margin-left: 0.5rem;
+  }
+
+  .deal .description {
+    padding: 0 0 0.3rem;
+  }
+
+  /* footer */
+
   .credits {
     padding: 2rem 0;
   }
