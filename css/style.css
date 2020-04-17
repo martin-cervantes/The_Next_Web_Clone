@@ -476,7 +476,7 @@ table {
   font-size: 0.8rem;
 }
 
-.latest {
+.hl_latest {
   color: #f42;
   display: flex;
   justify-content: space-between;
@@ -484,18 +484,18 @@ table {
   background-color: rgba(255, 68, 34, 0.06);
 }
 
-.latest .lt_text_container {
+.hl_latest .lt_text_container {
   padding: 0.7rem;
 }
 
-.latest .lt_title {
+.hl_latest .lt_title {
   color: #f42;
   font-weight: 700;
   line-height: 1.4;
   text-decoration: none;
 }
 
-.latest .lt_title:hover {
+.hl_latest .lt_title:hover {
   text-decoration: underline;
 }
 
