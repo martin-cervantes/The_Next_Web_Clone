@@ -82,7 +82,7 @@ tt,
 u,
 ul,
 var,
-video {
+article {
   border: 0;
   font: inherit;
   font-size: 100%;
@@ -160,15 +160,36 @@ table {
   width: 110px;
   position: fixed;
   height: 50px;
-}
-
-.logo {
   width:150px;
   position: absolute;
 }
 
+.topmost-navigation {
+  height: 30px;
+  background-color:#000;
+  line-height: 25px;
+  padding-left: 24px;
+}
+
+.topmost-navigation a {
+ color:rgb(116, 111, 111);
+ text-decoration: none;
+ font-weight: normal;
+ font-size: 0.8em;
+ display: inline-block;
+ margin: 0 5px;
+}
+
+.left-float {
+  float: left;
+}
+
+.right-float {
+  float: right;
+}
+
 .navbar-nav {
-  width: 90%;
+  width: auto;
   height: 50px;
 }
 
@@ -181,19 +202,28 @@ table {
 .navbar-nav li {
   float: left;
   padding: 4px;
+  margin-left: 20px;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  margin: 0 5px;
 }
 
 .logo-container {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100px;
-  height: 56px;
+  height: 55px;
+  padding-top: 30px;
   background-color: red;
+  display: none;
 }
 
 .top-header {
-  padding-left: 90px;
+  height: 50px;
+  line-height: 36px;;
 }
 
 .top-header a{
@@ -201,35 +231,146 @@ table {
   font-size: 1em;
 }
 
+.search-plus-menu {
+  width: 110px;
+  height: 50px;
+  background-color:white;
+  top: 30px;
+  right: 0;
+  position: absolute;
+}
+
+.menu-btn,
+.search-btn {
+  width: 50px;
+  border-left: solid 1px #ccc;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.fa-search {
+  transform: rotate(90deg);
+}
+
 .our-tech-festival_ {
   padding-left: 140px;
-  height: 20px;
-  line-height: 20px;
+  height: 30px;
+  line-height: 25px;
   font-size: .8em;
   background-color:yellow;
 }
 
 .front_{
-  height: 440px;
+  height: auto;
 }
 
-.front_ .video-large_ {
+.latest-news_  {
+  padding-top: 20px;
+}
+
+.front_ .article-large_ {
   float: left;
   width: 65%;
-  height: 440px;
-  background-color: darkorchid;
 }
 
-.front_ .video-thumb_ {
+.front_ .article-large_ .main_article_{
+  background-image: url(../img/index.png);
+  background-size: cover;
+  width: 98%;
+  margin: auto auto auto 8px;
+  height: 500px; 
+}
+
+.main-heading-text {
+  background-image: url(../img/front-gradient.png);
+  background-position: 50% 50%;
+  height: 100%;
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+}
+
+.main-heading-text p.date {
+  font-size: 0.9em;
+  padding: 20px;
+  text-align: right;
+
+}
+
+.magic-logo {
+  width:60%;
+}
+
+.distract {
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.-heading-text {
+  position:absolute;
+  bottom: 20px;
+}
+
+.main-heading-text h1{
+  font-size: 3.5em;
+  font-weight: bolder;
+  font-family: Avalon,sans-serif;
+}
+
+.main-heading-text span {
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.front_ .article-thumb_ {
   float: right;
   width: 35%;
-  height: 440px;
-  background-color: darkturquoise;
+  height: 500px;
 }
 
-.video-thumb_ div {
- height:219px;
-background-color: deeppink;
+.article-thumb_ .wrap-details {
+  width: 98%;
+  height:245px;
+}
+
+.top-article_ {
+  background-image: url(../img/mist.jpg);
+  background-size: cover;
+}
+
+.bottom-article_ {
+  margin-top: 9px;
+  background-image: url(../img/indexds.png);
+  background-size: cover;
+}
+
+._details_ {
+  background-image: url(../img/front-gradient.png);
+  background-position: 50% 50%;
+  height: 100%;
+  position: relative;
+}
+
+._details_ a {
+  display: block;
+  position: absolute;
+  bottom:10px;
+  color:#fff;
+  text-decoration: none;
+}
+
+._details_ h2 {
+  padding: 20px 20px 0 20px;
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: Avalon,sans-serif;
+}
+
+._details_ p {
+  padding: 20px;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 .clear {
@@ -240,9 +381,9 @@ background-color: deeppink;
   min-height: 200px;
 }
 
-.latest-news_ .col-sm div {
-   height: 240px;
-   background-image: url(images/images-1.jpg);
+.faded_text {
+  color: #aaa;
+  font-size: 0.75rem;
 }
 
 /* deals */
@@ -396,6 +537,11 @@ background-color: deeppink;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
+  }
+  .latest,
+  .hard-forked,
+  .plugged {
+    display: none;
   }
 }
 
