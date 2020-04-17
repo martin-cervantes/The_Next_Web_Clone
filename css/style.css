@@ -193,11 +193,11 @@ table {
   height: 50px;
 }
 
-.navbar-nav ul, 
+.navbar-nav ul,
 .navbar-nav li {
   margin: 0;
   padding: 0;
-} 
+}
 
 .navbar-nav li {
   float: left;
@@ -279,7 +279,7 @@ table {
   background-size: cover;
   width: 98%;
   margin: auto auto auto 8px;
-  height: 500px; 
+  height: 500px;
 }
 
 .main-heading-text {
@@ -386,6 +386,145 @@ table {
   font-size: 0.75rem;
 }
 
+/* headlines */
+
+.headlines {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin: 0 2.2rem;
+}
+
+.headline {
+  margin: 1.5rem 0.8rem;
+}
+
+.headline .hl_title {
+  padding-bottom: 1rem;
+}
+
+.headline .hl_anchor {
+  color: #f42;
+  font-family: 'Avalon', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.headline .hl_anchor:hover {
+  color: black;
+}
+
+.most_popular {
+  position: relative;
+}
+
+.most_popular .mp_group {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.8rem 1.2rem 1.2rem;
+  z-index: 1;
+}
+
+.mp_title {
+  margin: 0.3rem 0;
+}
+
+.most_popular .mp_picture {
+  width: 100%;
+}
+
+.most_popular .mp_text {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.most_popular .mp_title {
+  color: white;
+  font-family: 'Avalon', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.most_popular .mp_title:hover {
+  text-decoration: underline;
+}
+
+.most_popular .mp_author {
+  color: #999a9b;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.most_popular .mp_author:hover {
+  color: white;
+}
+
+.most_popular .fa-circle {
+  color: #999a9b;
+  font-size: 0.2rem;
+  position: relative;
+  top: -0.2rem;
+}
+
+.most_popular .mp_info {
+  color: #999a9b;
+  font-size: 0.8rem;
+}
+
+.latest {
+  color: #f42;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  background-color: rgba(255, 68, 34, 0.06);
+}
+
+.latest .lt_text_container {
+  padding: 0.7rem;
+}
+
+.latest .lt_title {
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.latest .lt_title:hover {
+  text-decoration: underline;
+}
+
+.lt_picture {
+  width: 6rem;
+}
+
+.hl_list {
+  color: #f42;
+  font-size: 0.6rem;
+  list-style: disc outside;
+  margin-left: 1rem;
+}
+
+.hl_list .hl_li {
+  border-bottom: 1px solid #eee;
+  padding: 0.55rem 0;
+}
+
+.hl_list .li_anchor {
+  color: #555;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.hl_list .li_anchor:hover {
+  color: black;
+}
+
 /* deals */
 
 .deals_section {
@@ -399,7 +538,7 @@ table {
   margin: 0 1.3rem;
 }
 
-.deals_header .anchor {
+.deals_header .dl_anchor {
   color: #f42;
   display: flex;
   flex: 1;
@@ -409,7 +548,7 @@ table {
   text-decoration: none;
 }
 
-.deals_header .anchor:hover {
+.deals_header .dl_anchor:hover {
   color: black;
 }
 
@@ -438,7 +577,7 @@ table {
   margin: 0.8rem;
 }
 
-.deal .picture {
+.deal .dl_picture {
   width: 100%;
 }
 
@@ -482,7 +621,7 @@ table {
   margin-bottom: 2.5rem;
 }
 
-.icons .anchor {
+.icons .ic_anchor {
   border-radius: 50%;
   background-color: #333;
   color: white;
@@ -491,7 +630,7 @@ table {
   margin: 0 0.45rem;
 }
 
-.links .anchor {
+.links .lk_anchor {
   color: #aaa;
   font-size: 0.75rem;
   font-weight: 100;
@@ -499,7 +638,7 @@ table {
   margin: 1rem 0.3rem;
 }
 
-.links .anchor:hover {
+.links .lk_anchor:hover {
   color: white;
 }
 
@@ -511,7 +650,7 @@ table {
   padding: 2.5rem 0;
 }
 
-.credits .text {
+.credits .cd_text {
   display: inline-block;
   padding: 0.2rem 0;
 }
@@ -533,19 +672,32 @@ table {
 /* queries */
 
 @media (max-width: 1000px) {
+  /* healines */
+
+  .headlines {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin: 0;
+  }
+
+  /* deals */
+
   .deals {
-    display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-  }
-  .latest,
-  .hard-forked,
-  .plugged {
-    display: none;
   }
 }
 
 @media (max-width: 750px) {
+  /* headlines */
+
+  .headlines {
+    grid-template-columns: auto;
+    margin: 0;
+  }
+
+  /* deals */
+
   .deals {
     grid-template-columns: auto;
   }
@@ -556,7 +708,7 @@ table {
     margin: 0.5rem 0.8rem;
   }
 
-  .deal .picture {
+  .deal .dl_picture {
     width: 5rem;
   }
 
@@ -574,7 +726,7 @@ table {
     padding: 2rem 0;
   }
 
-  .credits .text {
+  .credits .cd_text {
     display: block;
   }
 }
