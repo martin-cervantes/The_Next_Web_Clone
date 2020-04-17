@@ -167,6 +167,22 @@ table {
   position: absolute;
 }
 
+.navbar-nav {
+  width: 90%;
+  height: 50px;
+}
+
+.navbar-nav ul, 
+.navbar-nav li {
+  margin: 0;
+  padding: 0;
+} 
+
+.navbar-nav li {
+  float: left;
+  padding: 4px;
+}
+
 .logo-container {
   position: absolute;
   top: 0px;
@@ -209,12 +225,15 @@ table {
   width: 35%;
   height: 440px;
   background-color: darkturquoise;
-  padding: 2px;;
 }
 
 .video-thumb_ div {
  height:219px;
 background-color: deeppink;
+}
+
+.clear {
+  clear: both;
 }
 
 .latest-news_ .row div {
