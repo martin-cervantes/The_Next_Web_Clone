@@ -93,7 +93,6 @@ article {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
 aside,
 details,
 figcaption,
@@ -157,27 +156,25 @@ table {
 .logo {
   top: 0;
   left: 0;
-  width: 110px;
-  position: fixed;
   height: 50px;
-  width:150px;
+  width: 150px;
   position: absolute;
 }
 
 .topmost-navigation {
   height: 30px;
-  background-color:#000;
+  background-color: #000;
   line-height: 25px;
   padding-left: 10px;
 }
 
 .topmost-navigation a {
- color:rgb(116, 111, 111);
- text-decoration: none;
- font-weight: normal;
- font-size: 0.8em;
- display: inline-block;
- margin: 0 5px;
+  color: rgb(116, 111, 111);
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 0.8em;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .left-float {
@@ -217,7 +214,7 @@ table {
   left: 0;
   width: 100px;
   height: 80px;
-  background-color:red;
+  background-color: red;
   display: none;
 }
 
@@ -226,28 +223,27 @@ table {
   position: relative;
 }
 
-.nav-logo img{
+.nav-logo img {
   width: 60px;
   margin-left: 15px;
 }
 
 .top-header {
   height: 50px;
-  line-height: 36px;;
+  line-height: 36px;
 }
 
-.top-header a{
-  color:#888;
+.top-header a {
+  color: #888;
 }
 
 .search-plus-menu {
   width: auto;
   height: 50px;
-  background-color:white;
+  background-color: white;
   top: 30px;
-  right: 0px;
+  right: 0;
   position: absolute;
-  
 }
 
 .menu-btn,
@@ -259,25 +255,25 @@ table {
   line-height: 50px;
 }
 
-.menu-btn{
+.menu-btn {
   color: #f42;
   display: none;
 }
 
 .fa-search {
   transform: rotate(90deg);
-  color:#ddd;
+  color: #ddd;
 }
 
 .our-tech-festival_ {
   padding-left: 140px;
   height: 30px;
   line-height: 25px;
-  font-size: .8em;
-  background-color:yellow;
+  font-size: 0.8em;
+  background-color: yellow;
 }
 
-.latest-news_  {
+.latest-news_ {
   padding-top: 20px;
 }
 
@@ -287,7 +283,7 @@ table {
   padding: 2px 10px;
 }
 
-.main_article_{
+.main__ {
   position: relative;
   background-image: url(../img/index.png);
   background-size: cover;
@@ -318,12 +314,11 @@ table {
   font-size: 0.9em;
   padding: 20px;
   text-align: right;
-
 }
 
 .magic-logo {
   top: 30px;
-  width:60%;
+  width: 60%;
   z-index: 1200;
   position: absolute;
 }
@@ -341,14 +336,14 @@ table {
 }
 
 .-heading-text {
-  position:absolute;
+  position: absolute;
   bottom: 20px;
 }
 
-.main-heading-text h1{
+.main-heading-text h1 {
   font-size: 3.5em;
   font-weight: bolder;
-  font-family: Avalon,sans-serif;
+  font-family: 'Avalon', sans-serif;
 }
 
 .main-heading-text span {
@@ -361,13 +356,13 @@ table {
   height: 500px;
 }
 
-.article-large_{
+.article-large_ {
   width: 65%;
   height: 500px;
 }
 
 .wrap-details {
-  height:245px;
+  height: 245px;
   margin-left: 10px;
 }
 
@@ -392,8 +387,8 @@ table {
 ._details_ a {
   display: block;
   position: absolute;
-  bottom:10px;
-  color:#fff;
+  bottom: 10px;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -401,7 +396,7 @@ table {
   padding: 20px 20px 0 20px;
   font-size: 2em;
   font-weight: bolder;
-  font-family: Avalon,sans-serif;
+  font-family: 'Avalon', sans-serif;
 }
 
 ._details_ p {
@@ -412,6 +407,11 @@ table {
 
 .clear {
   clear: both;
+}
+
+.funding-title div {
+  width: 50%;
+  padding: 5px 0;
 }
 
 .latest-news_ .row div {
@@ -601,7 +601,7 @@ table {
 }
 
 .round {
-  background: rgba(255,68,34,.03);
+  background: rgba(255, 68, 34, 0.03);
   margin: 5px;
 }
 
@@ -629,11 +629,6 @@ table {
   font-weight: bolder;
 }
 
-.funding-title div {
-  width: 50%;
-  padding: 5px 0;
-}
-
 .funding-title h1 {
   font-size: 1.2em;
   font-weight: bolder;
@@ -651,7 +646,7 @@ table {
   color: #f42;
 }
 
-.funder-name{
+.funder-name {
   color: #fff;
   font-size: 1.1em;
   font-weight: bold;
@@ -663,7 +658,7 @@ table {
 }
 
 .figure {
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
   height: 60px;
   font-size: 0.9em;
   padding-left: 90px;
@@ -678,22 +673,21 @@ table {
 }
 
 .figure span {
-  color:#888;
+  color: #888;
 }
 
 .round .-payment {
   height: 50px;
   font-weight: normal;
-  padding-left: 20px;
   padding: 20px 20px;
-  color:#888;
+  color: #888;
 }
 
 .-payment span {
   font-weight: normal;
 }
 
-.-payment .fa-briefcase, 
+.-payment .fa-briefcase,
 .-payment .fa-tag {
   color: #000;
 }
@@ -704,9 +698,9 @@ table {
 }
 
 .round .-details {
-  color:#888;
+  color: #888;
   height: 50px;
-  border-top: 1px solid rgba(255,68,34,.25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
   font-size: 0.7em;
   font-weight: normal;
   padding-left: 20px;
@@ -719,9 +713,6 @@ table {
 }
 
 /* deals */
-
-
-
 
 .deals_header {
   display: flex;
@@ -864,7 +855,8 @@ table {
 /* queries */
 
 @media (max-width: 1000px) {
-  /* Funding*/
+  /* Funding */
+
   .funds {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -880,8 +872,8 @@ table {
   }
 
   .-details {
-    font-size: 0.7em
-  } 
+    font-size: 0.7em;
+  }
 
   .funding-links {
     display: flex;
@@ -894,7 +886,7 @@ table {
     font-size: 1.5em;
     font-weight: bolder;
   }
-  
+
   .funding-title div {
     width: 100%;
     padding: 5px 0;
@@ -909,12 +901,14 @@ table {
     margin: 0;
   }
 
- /*dispaly red fixed logo*/
+  /* dispaly red fixed logo */
+
   .logo-container {
     display: block;
   }
 
-  /* Reposition logo text remove the large white logo*/
+  /* Reposition logo text remove the large white logo */
+
   .nav-logo {
     top: 20px;
     position: relative;
@@ -924,7 +918,8 @@ table {
     display: none;
   }
 
-  /*reposition navbar and hide some links hide some links */
+  /* reposition navbar and hide some links hide some links */
+
   .navbar-nav .latest,
   .left-float ._news- {
     padding-left: 100px;
@@ -932,10 +927,11 @@ table {
 
   .neutral,
   .growth-quaters {
-   display: none;
+    display: none;
   }
 
   /* others */
+
   .menu-btn {
     display: block;
   }
@@ -948,7 +944,7 @@ table {
     font-size: 1.4em;
   }
 
-  .wrap-details  {
+  .wrap-details {
     height: 190px;
   }
 
@@ -978,21 +974,23 @@ table {
 }
 
 @media (max-width: 750px) {
+  /* Change position and height of red logo */
 
-  /*Change position and height of red logo*/
   .logo-container {
     display: block;
     height: 50px;
     padding-top: 0;
   }
 
-  /*reposition logo text*/
+  /* reposition logo text */
+
   .nav-logo {
     top: 10px;
     position: relative;
   }
 
-  /* Reposition the main articles*/
+  /* Reposition the main articles */
+
   .front_ {
     display: block;
   }
@@ -1010,7 +1008,7 @@ table {
     margin-top: 10px;
   }
 
-  .wrap-details  {
+  .wrap-details {
     margin-left: 0%;
   }
 
@@ -1049,12 +1047,13 @@ table {
     padding: 10px;
     margin: auto;
   }
-  
+
   .varbar {
     display: none;
   }
 
-  /* hide the nav bar*/
+  /* hide the nav bar */
+
   .navbar-nav,
   .topmost-navigation {
     display: none;
