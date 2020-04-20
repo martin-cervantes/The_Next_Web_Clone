@@ -1049,6 +1049,11 @@ table {
     padding: 10px;
     margin: auto;
   }
+
+  .funding-title h3 {
+    font-size: 1.3em;
+    font-weight: bolder;
+  }
   
   .varbar {
     display: none;
@@ -1107,4 +1112,11 @@ table {
   .credits .cd_text {
     display: block;
   }
+}
+
+@media (max-width: 360px ){
+   .funding-title  h3 {
+     font-weight: bold;
+     font-size: 1em;
+   }
 }
