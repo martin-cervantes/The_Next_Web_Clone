@@ -12,7 +12,7 @@
 
 ## :mag: Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/mcervantes71/The_Next_Web_Clone/7c18fd1f6d6c29326f55fef053c9edf6f9040e72/index.html)
+[Live Demo Link]( https://mcervantes71.github.io/The_Next_Web_Clone/index.html)
 
 ## :computer: Getting Started
 
