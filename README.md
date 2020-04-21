@@ -1,33 +1,32 @@
-# Project Name
+# The Next Web Clone
 
-    Project brief description
+    This project consists of replicating the The Next Web website putting emphasis on how it behaves
+    differently depending on the size of the screen where the website is rendered.
 
 ![screenshot](./screenshot.png)
 
-    Additional description about the project and its features.
+## :package: Built With
 
-## Built With
+    - Plain HTML5
+    - Pure CSS3
 
-    - Plain HTML5,
-    - Pure CSS3,
+## :mag: Live Demo
 
-## Live Demo
+[Live Demo Link](https://rawcdn.githack.com/mcervantes71/The_Next_Web_Clone/7c18fd1f6d6c29326f55fef053c9edf6f9040e72/index.html)
 
-[Live Demo Link](https://mcervantes71.github.io//index.html)
+## :computer: Getting Started
 
-## Getting Started
-
-    To get a local copy up and running follow these simple example steps.
+    To get a local copy up and running follow these simple steps.
 
 ### Install
 
-    Download the repository
+    Download the repository.
 
 ### Usage
 
-    In any browser, open the index.html file
+    In any browser, open the index.html file.
 
-## Authors
+## :busts_in_silhouette: Authors
 
 👤 **Author1**
 
@@ -36,13 +35,20 @@
 - Twitter: [@M4rt1nC3rv4nt3s](https://twitter.com/M4rt1nC3rv4nt3s)
 - Linkedin: [Martin Cervantes](https://www.linkedin.com/in/cervantesmartin/)
 
+👤 **Author2**
+
+- Gmail: [Gabriel Hilarion](mailto:gabrielhilarion@gmail.com)
+- Github: [@gabrie-lHilarion](https://github.com/gabrie-lHilarion)
+- Twitter: [@gabrielDeman](https://twitter.com/gabrielDeman)
+- Linkedin: [Gabriel Hilarion](https://www.linkedin.com/in/gabrielhilarion/)
+
 ## 🤝 Contributing
 
     Contributions, issues and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues).
 
-## Show your support
+## :star2: Show your support
 
     Give a ⭐️ if you like this project!
 
